@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
-    <div class="Wrapper">
-      <div class="Wrapper__container">
-        Hello World
-      </div>
-    </div>
+<?php
+session_start();
+require "config.php";
+date_default_timezone_set("America/Sao_Paulo");
+set_time_limit(0);
 
-    <script src="./assets/js/libs/jquery.min.js"></script>
-    <script src="./assets/js/main.min.js"></script>
+ini_set("display_errors", 1);
+ini_set("display_startup_erros", 1);
+error_reporting(E_ALL);
 
-  </body>
-</html>
+spl_autoload_register(function ($class) {
+  if (file_exists("controllers/" . $class . ".php")) {
+      require "controllers/" . $class . ".php";
+  } elseif (file_exists("models/" . $class . ".php")) {
+      require "models/" . $class . ".php";
+  } elseif (file_exists("core/" . $class . ".php")) {
+      require "core/" . $class . ".php";
+  }
+});
+
+$core = new Core();
+$core->run();

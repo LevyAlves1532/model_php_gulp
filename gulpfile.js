@@ -9,7 +9,6 @@ const sourcemaps = require("gulp-sourcemaps");
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
-const order = require('gulp-order');
 
 // CSS COMPILE
 function buildStyles() {
