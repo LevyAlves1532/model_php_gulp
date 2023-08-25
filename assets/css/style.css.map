@@ -1,1 +1,0 @@
-{"version":3,"sources":["_layout.scss","style.css"],"names":[],"mappings":"AAAA,KACE,sBCCF","file":"style.css","sourcesContent":["body {\r\n  background-color: $primary;\r\n}","body {\n  background-color: brown;\n}"]}

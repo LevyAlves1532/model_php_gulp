@@ -7,7 +7,7 @@ preg_match("/{$conexao}/i", $url, $match);
 
 //defininco se esta em desenvolvimento ou produção
 if (!empty($match)) {
-	define("BASE", "http://localhost/2024/gulp/sass-gulp/");
+	define("BASE", "http://localhost/2024/gulp/sass-gulp/public/");
 	$config["dbname"] = "";
 	$config["host"] = "localhost";
 	$config["dbuser"] = "root";

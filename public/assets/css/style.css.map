@@ -1,0 +1,1 @@
+{"version":3,"sources":["_layout.scss","configs/_variables.scss","style.css"],"names":[],"mappings":"AAAA,KACE,sBCDQ,CDER,QAAA,CACA,SECF","file":"style.css","sourcesContent":["body {\r\n  background-color: $primary;\r\n  margin: 0;\r\n  padding: 0;\r\n}","$primary: brown;","body {\n  background-color: brown;\n  margin: 0;\n  padding: 0;\n}"]}

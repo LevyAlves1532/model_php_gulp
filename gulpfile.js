@@ -17,7 +17,7 @@ function buildStyles() {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("assets/css", { sourcemaps: "." }));
+    .pipe(gulp.dest("public/assets/css", { sourcemaps: "." }));
 };
 
 // JAVASCRIPT COMPILE
@@ -26,7 +26,7 @@ function buildScripts() {
     .pipe(concat("app.js"))
     .pipe(rename("main.min.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("assets/js"));
+    .pipe(gulp.dest("public/assets/js"));
 }
 
 function watch() {
