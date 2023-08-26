@@ -30,8 +30,8 @@ function buildScripts() {
 }
 
 function watch() {
-  gulp.watch("public/src/scss/**/*.scss", buildStyles);
-  gulp.watch("public/src/js/**/*.js", buildScripts);
+  gulp.watch("src/scss/**/*.scss", buildStyles);
+  gulp.watch("src/js/**/*.js", buildScripts);
 };
 
 exports.style = buildStyles;
