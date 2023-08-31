@@ -14,4 +14,4 @@ Esse modelo foi criado com intuito de fornecer mais velocidade no carregamento d
 
 ## Como usar?
 
-Para usar basta configurar o config.php dentro da pasta `public`, e para rodar o sass e o javascript basta dar um `npm install` e logo após `npm run dev`.
+Para usar basta configurar o config.php dentro da pasta `public`, e para rodar o sass e o javascript basta dar um `npm install` e logo após `npm run gulp`.
