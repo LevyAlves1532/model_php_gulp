@@ -1,0 +1,17 @@
+{
+    "name": "mvc/project",
+    "autoload": {
+        "psr-4": {
+            "Mvc\\Project\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "Lêvy Alves",
+            "email": "levy.pereiraA1532@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
